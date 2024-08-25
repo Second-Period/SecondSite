@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
             $table->string('nome_empresa')->nullable(false);
-            $table->string('contato')->nullable(false);
+            $table->integer('contato')->nullable(false);
             $table->integer('cnpj')->nullable(false);
             $table->string('url')->nullable(false);
             $table->timestamps();
