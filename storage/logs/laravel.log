@@ -1,0 +1,180 @@
+[2024-09-04 18:38:42] local.ERROR: Command "make:" is ambiguous.
+Did you mean one of these?
+    make:cache-table         Create a migration for the cache database table
+    make:cast                Create a new custom Eloquent cast class
+    make:channel             Create a new channel class
+    make:class               Create a new class
+    make:component           Create a new view component class
+    make:command             Create a new Artisan command
+    make:controller          Create a new controller class
+    make:enum                Create a new enum
+    make:event               Create a new event class
+    make:exception           Create a new custom exception class
+    make:factory             Create a new model factory
+    make:interface           Create a new interface
+    make:job                 Create a new job class
+    make:listener            Create a new event listener class
+    make:mail                Create a new email class
+    make:middleware          Create a new middleware class
+    make:model               Create a new Eloquent model class
+    make:notification        Create a new notification class
+    make:notifications-table Create a migration for the notifications table
+    make:observer            Create a new observer class
+    make:policy              Create a new policy class
+    make:provider            Create a new service provider class
+    make:queue-failed-table  Create a migration for the failed queue jobs database table
+    make:queue-table         Create a migration for the queue jobs database table
+    make:queue-batches-table Create a migration for the batches database table
+    make:request             Create a new form request class
+    make:resource            Create a new resource
+    make:rule                Create a new validation rule
+    make:scope               Create a new scope class
+    make:seeder              Create a new seeder class
+    make:session-table       Create a migration for the session database table
+    make:test                Create a new test class
+    make:trait               Create a new trait
+    make:view                Create a new view
+    make:migration           Create a new migration file. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:\" is ambiguous.
+Did you mean one of these?
+    make:cache-table         Create a migration for the cache database table
+    make:cast                Create a new custom Eloquent cast class
+    make:channel             Create a new channel class
+    make:class               Create a new class
+    make:component           Create a new view component class
+    make:command             Create a new Artisan command
+    make:controller          Create a new controller class
+    make:enum                Create a new enum
+    make:event               Create a new event class
+    make:exception           Create a new custom exception class
+    make:factory             Create a new model factory
+    make:interface           Create a new interface
+    make:job                 Create a new job class
+    make:listener            Create a new event listener class
+    make:mail                Create a new email class
+    make:middleware          Create a new middleware class
+    make:model               Create a new Eloquent model class
+    make:notification        Create a new notification class
+    make:notifications-table Create a migration for the notifications table
+    make:observer            Create a new observer class
+    make:policy              Create a new policy class
+    make:provider            Create a new service provider class
+    make:queue-failed-table  Create a migration for the failed queue jobs database table
+    make:queue-table         Create a migration for the queue jobs database table
+    make:queue-batches-table Create a migration for the batches database table
+    make:request             Create a new form request class
+    make:resource            Create a new resource
+    make:rule                Create a new validation rule
+    make:scope               Create a new scope class
+    make:seeder              Create a new seeder class
+    make:session-table       Create a migration for the session database table
+    make:test                Create a new test class
+    make:trait               Create a new trait
+    make:view                Create a new view
+    make:migration           Create a new migration file. at C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\symfony\\console\\Application.php:743)
+[stacktrace]
+#0 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\symfony\\console\\Application.php(258): Symfony\\Component\\Console\\Application->find('make:')
+#1 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(197): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1203): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\Usuario\\Desktop\\pd2\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2024-09-09 12:29:20] local.ERROR: syntax error, unexpected identifier "Route" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected identifier \"Route\" at C:\\Users\\Usuario\\Desktop\\pd2\\routes\\web.php:16)
+[stacktrace]
+#0 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(513): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\Usuari...')
+#1 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(467): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\Usuari...')
+#2 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(199): Illuminate\\Routing\\Router->group(Array, 'C:\\\\Users\\\\Usuari...')
+#3 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(221): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\Users\\\\Usuari...')
+#4 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}()
+#5 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(83): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#8 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#9 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(162): Illuminate\\Container\\Container->call(Object(Closure))
+#10 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(59): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#11 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#12 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(83): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#14 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#15 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#16 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(130): Illuminate\\Container\\Container->call(Object(Closure))
+#17 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1122): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#18 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1100): Illuminate\\Foundation\\Application->bootProvider(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider))
+#19 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider), 'Illuminate\\\\Foun...')
+#20 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1099): array_walk(Array, Object(Closure))
+#21 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#22 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(316): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(187): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(171): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#25 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1188): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\Usuario\\Desktop\\pd2\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\Users\\\\Usuari...')
+#29 {main}
+"} 
+[2024-09-09 12:29:37] local.ERROR: syntax error, unexpected identifier "Route" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected identifier \"Route\" at C:\\Users\\Usuario\\Desktop\\pd2\\routes\\web.php:16)
+[stacktrace]
+#0 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(513): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\Usuari...')
+#1 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(467): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\Usuari...')
+#2 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(199): Illuminate\\Routing\\Router->group(Array, 'C:\\\\Users\\\\Usuari...')
+#3 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(221): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\Users\\\\Usuari...')
+#4 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}()
+#5 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(83): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#8 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#9 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(162): Illuminate\\Container\\Container->call(Object(Closure))
+#10 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(59): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#11 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#12 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(83): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#14 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#15 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#16 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(130): Illuminate\\Container\\Container->call(Object(Closure))
+#17 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1122): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#18 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1100): Illuminate\\Foundation\\Application->bootProvider(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider))
+#19 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider), 'Illuminate\\\\Foun...')
+#20 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1099): array_walk(Array, Object(Closure))
+#21 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#22 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(316): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(187): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(171): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#25 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1188): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\Usuario\\Desktop\\pd2\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\Users\\\\Usuari...')
+#29 {main}
+"} 
+[2024-09-09 12:32:17] local.ERROR: syntax error, unexpected identifier "Route" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected identifier \"Route\" at C:\\Users\\Usuario\\Desktop\\pd2\\routes\\web.php:14)
+[stacktrace]
+#0 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(513): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\Usuari...')
+#1 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(467): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\Usuari...')
+#2 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(199): Illuminate\\Routing\\Router->group(Array, 'C:\\\\Users\\\\Usuari...')
+#3 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(221): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\Users\\\\Usuari...')
+#4 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}()
+#5 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(83): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#8 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#9 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(162): Illuminate\\Container\\Container->call(Object(Closure))
+#10 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(59): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#11 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#12 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(83): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#14 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#15 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#16 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(130): Illuminate\\Container\\Container->call(Object(Closure))
+#17 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1122): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#18 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1100): Illuminate\\Foundation\\Application->bootProvider(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider))
+#19 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider), 'Illuminate\\\\Foun...')
+#20 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1099): array_walk(Array, Object(Closure))
+#21 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#22 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(316): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(187): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(171): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#25 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1188): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\Usuario\\Desktop\\pd2\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Usuario\\Desktop\\pd2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\Users\\\\Usuari...')
+#29 {main}
+"} 
