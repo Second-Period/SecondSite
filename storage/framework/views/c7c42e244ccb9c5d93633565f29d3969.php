@@ -59,4 +59,4 @@
 <?php if (isset($__componentOriginal9ac128a9029c0e4701924bd2d73d7f54)): ?>
 <?php $component = $__componentOriginal9ac128a9029c0e4701924bd2d73d7f54; ?>
 <?php unset($__componentOriginal9ac128a9029c0e4701924bd2d73d7f54); ?>
-<?php endif; ?><?php /**PATH C:\Users\Usuario\Desktop\pd2\resources\views/users.blade.php ENDPATH**/ ?>
+<?php endif; ?><?php /**PATH C:\Users\Usuario\Desktop\pd2\resources\views/admin/users.blade.php ENDPATH**/ ?>
