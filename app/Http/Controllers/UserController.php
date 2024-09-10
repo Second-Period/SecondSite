@@ -9,7 +9,7 @@ class UserController extends Controller
 {
     //
     function index() {
-        return view('users', ['users' => $this->getUsers()]);  
+        return view('admin.users', ['users' => $this->getUsers()]);  
     }
     function getUsers() {
         $users  = User::all();
