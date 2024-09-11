@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\AdminMiddleware;
@@ -13,6 +14,12 @@ Route::middleware(['auth', 'verified',AdminMiddleware::class])->group(function (
     Route::group(['prefix' => 'admin'], function () {
         Route::get('/dashboard', fn () => view('admin.dashboard'))->name('dashboard');
         Route::get('/user',[UserController::class, 'index'])->name('users.index');
+        Route::get('/products',[ProductsController::class, 'index'])->name('products.index');
+        Route::get('/products/create',[ProductsController::class, 'renderiza_tela'])->name('products.render');
+        Route::post('/products/create',[ProductsController::class, 'create'])->name('products.create');
+        Route::get('/products/{id}',[ProductsController::class, 'detail'])->name('products.detail');
+        Route::put('/products/{id}',[ProductsController::class, 'update'])->name('products.update');
+        Route::delete('/products/{id}',[ProductsController::class, 'delete'])->name('products.delete');
     });
 });
 Route::middleware('auth')->group(function () {
