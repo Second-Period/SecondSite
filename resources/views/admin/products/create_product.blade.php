@@ -18,7 +18,8 @@
                             {{ __("Create a new product") }}
                         </p>
 
-                        <form action="{{ route('products.create')}}" method="post">
+                        <form action="{{ route('products.create')}}" method="post" enctype="multipart/form-data">
+                            @csrf
                             <div>
                                 <x-input-label for="name" :value="__('Name')" />
                                 <x-text-input id="name" name="name" type="text" class="mt-1 block w-full" required autofocus autocomplete="name" />
