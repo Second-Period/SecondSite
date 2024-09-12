@@ -16,12 +16,12 @@ class ProductsController extends Controller
         return view('admin.products.create_product');
     }
     public function create(Request $request){
-        $request->validate([
+        $validator = $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'price' => ['required', 'numeric'],
             'product_img' => ['required', 'image', 'mimes:jpeg,png,jpg,gif,svg', 'max:2048'],
         ]);
-            
+                    
         $file = rand(0,9999).'-'.$request->file('product_img')->getClientOriginalName();
         $path = $request->file('product_img')->storeAs('upload', $file);
             
@@ -35,18 +35,18 @@ class ProductsController extends Controller
     }
 
     public function detail($id){
-        $product = Products::find($id);
+        $product = Products::findOrFail($id);
         return view('admin.products.detail_product',['product' => $product]);        
     }
     
     public function update(Request $request, $id){
-        $product = Products::find($id);
+        $product = Products::findorFail($id);
         $product->update($request->all());
         return redirect()->route('products.index')->with('success', 'Produto atualizado com sucesso!');  
     }
 
     public function delete($id){
-        $product = Products::find($id);
+        $product = Products::findorFail($id);
         $product->delete();
         return redirect()->route('products.index')->with('success', 'Produto excluido com sucesso!');  
     }
