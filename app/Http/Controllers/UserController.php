@@ -8,12 +8,17 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     //
-    function index() {
+    public function index() {
         return view('admin.users', ['users' => $this->getUsers()]);  
     }
-    function getUsers() {
+    public function getUsers() {
         $users  = User::all();
         return $users;
     }
+
+    public function userForAdmin() {
+        
+    }
+    
 
 }
