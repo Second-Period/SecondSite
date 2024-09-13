@@ -1,0 +1,13 @@
+@layer utilities {
+    .paragraphy {
+        @apply mt-1 mb-1 text-sm text-gray-600 dark:text-gray-400
+    }
+
+    .title {
+        @apply font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight
+    }
+
+    .subtitle {
+        @apply text-lg font-medium text-gray-900 dark:text-gray-100
+    }
+}

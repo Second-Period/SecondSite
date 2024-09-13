@@ -1,3 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import './components/admin/table.css';
+@import "tailwindcss/utilities";
+@import './utilities/admin/paragrafy.css';
+@import './utilities/admin/space.css';

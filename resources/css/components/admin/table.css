@@ -1,0 +1,13 @@
+@layer components {
+    table {
+        @apply rounded-lg table-auto mx-auto divide-y divide-gray-700 min-w-full
+    }
+
+    th {
+        @apply p-4 text-base text-center text-gray-100 tracking-normal
+    }
+
+    td {
+        @apply p-2 text-base text-center text-gray-100 tracking-normal
+    }
+}

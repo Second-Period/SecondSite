@@ -12,7 +12,6 @@ button.addEventListener('click', () => {
     img.removeAttribute('readonly')
     img.type = 'file'
     button.classList.add('hidden')
-    dele.classList.remove('hidden')
     const botao = document.createElement('button')
     const botao2 = document.createElement('button')
     
