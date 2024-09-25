@@ -10,10 +10,7 @@ Route::get('/laravel', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/', function () {
-    return view('index');
-})->name('page_home');
-
+Route::get('/',[ProductsController::class, 'render_products'])->name('page_home');
 Route::middleware(['auth', 'verified',AdminMiddleware::class])->group(function () {
     Route::group(['prefix' => 'admin'], function () {
         Route::get('/dashboard', fn () => view('admin.dashboard'))->name('dashboard');
