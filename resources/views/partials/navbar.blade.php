@@ -32,8 +32,8 @@
             </ul>
             <div class=' flex justify-end w-full md:w-1/2'>
                 <form class="ml-auto flex justify-end items-center gap-2">
-                    <input class="form-input rounded-lg px-3 py-1 bg-gray-700 border-none text-white placeholder-gray-300 focus:ring focus:ring-indigo-500" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                    <button class="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-lg" type="submit">Pesquisar</button>
+                    <input class="rounded-lg px-3 py-1 bg-gray-700 border-none text-white placeholder-gray-300 focus:ring focus:ring-indigo-500" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <x-button>Pesquisar</x-button>
                 </form>
             </div>
         </div>
