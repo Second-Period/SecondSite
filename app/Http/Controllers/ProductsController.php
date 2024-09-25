@@ -50,5 +50,7 @@ class ProductsController extends Controller
         $product->delete();
         return redirect()->route('products.index')->with('success', 'Produto excluido com sucesso!');  
     }
-    
+    public function render_products() {
+        return view('page.products.products', ['products' => Products::all()]);
+    }
 }
