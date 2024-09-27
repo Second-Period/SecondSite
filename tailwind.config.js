@@ -28,6 +28,5 @@ export default {
             styled: true,
             logs: true,
             utils: true
-    }
-        
+    }   
 };

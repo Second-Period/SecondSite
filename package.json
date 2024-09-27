@@ -9,14 +9,14 @@
         "@tailwindcss/forms": "^0.5.9",
         "alpinejs": "^3.14.1",
         "autoprefixer": "^10.4.20",
-        "axios": "^1.7.7",
         "laravel-vite-plugin": "^1.0.5",
         "postcss": "^8.4.47",
         "postcss-import": "^16.1.0",
-        "tailwindcss": "^3.4.12",
-        "vite": "^5.4.6"
+        "tailwindcss": "^3.4.13",
+        "vite": "^5.4.8"
     },
     "dependencies": {
+        "axios": "^1.7.7",
         "daisyui": "^4.12.10"
     }
 }
