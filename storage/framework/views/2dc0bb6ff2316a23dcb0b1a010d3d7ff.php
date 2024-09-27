@@ -1,8 +1,9 @@
 
 
 <?php $__env->startSection('content'); ?>
+    
     <div class="container mx-auto">
-        <?php echo $__env->make('partials.carousel', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <?php echo $__env->make('partials.carousel', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>    
        <div class="p-4 border rounded mx-3">
             <div class="text-lg border-b-2 border-slate-300 mb-2 pb-2 text-center"> Produtos</div>
 

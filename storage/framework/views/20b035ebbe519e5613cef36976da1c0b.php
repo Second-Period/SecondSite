@@ -13,6 +13,10 @@
     <main>
         <?php echo $__env->yieldContent('content'); ?>
     </main>
-    <?php echo $__env->make('partials.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    <?php if(Request::route()->named('cadastro') || Request::route()->named('login')): ?>
+        
+    <?php else: ?>
+        <?php echo $__env->make('partials.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>    
+    <?php endif; ?>
 </body>
 </html><?php /**PATH C:\Users\Usuario\Desktop\pd2\resources\views/index.blade.php ENDPATH**/ ?>

@@ -13,6 +13,10 @@
     <main>
         @yield('content')
     </main>
-    @include('partials.footer')
+    @if (Request::route()->named('cadastro') || Request::route()->named('login'))
+        
+    @else
+        @include('partials.footer')    
+    @endif
 </body>
 </html>

@@ -13,7 +13,7 @@
                     <a class="text-sm text-white hover:text-gray-400 whitespace-nowrap" href="#">Field Multimarcas</a>
                 </li>
                 <li>
-                    <a class="text-sm text-white hover:text-gray-400 whitespace-nowrap" href="./pages/cadastro.html">Criar uma conta</a>
+                    <a class="text-sm text-white hover:text-gray-400 whitespace-nowrap" href="<?php echo e(route('cadastro')); ?>" :active="request()->routeIs('cadastro')">Criar uma conta</a>
                 </li>
                 <li>
                     <a class="text-sm text-white hover:text-gray-400" href="https://www.instagram.com/stories/highlights/18054277513454234/">Produtos</a>
