@@ -40,14 +40,13 @@
                             </div>
 
                             <div id="div" class="flex mt-3 items-center gap-4">
-                                <x-secondary-button class="text-center px-7" id="edit">{{ __('Edit') }}</x-secundary-button>
-                            
+                                <x-secondary-button class="text-center px-7"  id="edit">{{ __('Edit') }}</x-secundary-button>
                             </div>
                         </form>
                         <form id="form-delete" class="mt-3" action="{{route('products.delete', $product->id)}}" method="post">
                             @csrf
                             @method('DELETE')
-                            <x-secondary-button type='click' id="del">{{ __('Delete') }}</x-secundary-button>
+                            <x-secondary-button  id="del">{{ __('Delete') }}</x-secundary-button>
                         </form>
                     </header>
                 </div>

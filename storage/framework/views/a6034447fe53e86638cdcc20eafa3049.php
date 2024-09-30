@@ -242,7 +242,6 @@
 <?php $component = $__componentOriginal3b0e04e43cf890250cc4d85cff4d94af; ?>
 <?php unset($__componentOriginal3b0e04e43cf890250cc4d85cff4d94af); ?>
 <?php endif; ?>
-                            
                             </div>
                         </form>
                         <form id="form-delete" class="mt-3" action="<?php echo e(route('products.delete', $product->id)); ?>" method="post">
@@ -250,14 +249,14 @@
                             <?php echo method_field('DELETE'); ?>
                             <?php if (isset($component)) { $__componentOriginal3b0e04e43cf890250cc4d85cff4d94af = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3b0e04e43cf890250cc4d85cff4d94af = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.secondary-button','data' => ['type' => 'click','id' => 'del']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.secondary-button','data' => ['id' => 'del']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('secondary-button'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['type' => 'click','id' => 'del']); ?><?php echo e(__('Delete')); ?> <?php echo $__env->renderComponent(); ?>
+<?php $component->withAttributes(['id' => 'del']); ?><?php echo e(__('Delete')); ?> <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginal3b0e04e43cf890250cc4d85cff4d94af)): ?>
 <?php $attributes = $__attributesOriginal3b0e04e43cf890250cc4d85cff4d94af; ?>
