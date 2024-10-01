@@ -33,13 +33,11 @@ function cancel() {
     updateButton.classList.remove('hidden')
 }
 
-if (updateButton){ 
-    updateButton.onclick = () => edit() 
-} else() => null
 
-if (deleteButton) {
-    deleteButton.onclick = () => cancel()
-} else () => null
+updateButton ? updateButton.onclick = () => edit() : null 
+
+deleteButton ? deleteButton.onclick = () => cancel() : null
+
 
 
 
