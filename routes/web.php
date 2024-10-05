@@ -10,6 +10,7 @@ Route::get('/laravel', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/about', fn () => view('page.products.about'))->name('about');
 Route::get('/cadastro', fn () => view('page.auth.registerUser'))->name('cadastro');
 Route::get('/log', fn () => view('page.auth.loginUser'))->name('loginUser');
 Route::get('/',[ProductsController::class, 'render_products'])->name('page_home');
