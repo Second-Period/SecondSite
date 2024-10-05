@@ -9,7 +9,7 @@ const {name, price, img} = {
     img:document.getElementById('product_img'),
 }
 
-function edit() {
+function editar() {
     name.removeAttribute('readonly')
     price.removeAttribute('readonly')
     img.removeAttribute('readonly')
@@ -23,7 +23,7 @@ function edit() {
     div.appendChild(cancel(buttonCancel))
 }
 
-function cancel() {
+function cancelar() {
     name.setAttribute('readonly')
     price.setAttribute('readonly')
     img.setAttribute('readonly')
@@ -34,9 +34,9 @@ function cancel() {
 }
 
 
-updateButton ? updateButton.onclick = () => edit() : null 
+updateButton ? updateButton.onclick = () => editar() : null 
 
-deleteButton ? deleteButton.onclick = () => cancel() : null
+deleteButton ? deleteButton.onclick = () => cancelar() : null
 
 
 

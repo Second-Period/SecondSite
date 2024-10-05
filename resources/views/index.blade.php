@@ -9,14 +9,24 @@
     <title>Document</title>
 </head>
 <body class="bg-gray-200 font-sans">
-    @include('partials.navbar')
+    @if (Request::route()->named('about'))
+    
+    @else
+        @include('partials.navbar')
+    @endif
+
     <main>
         @yield('content')
     </main>
-    @if (Request::route()->named('cadastro') || Request::route()->named('login'))
+
+    @if (Request::route()->named('cadastro') || Request::route()->named('login') || Request::route()->named('about'))
         
     @else
-        @include('partials.footer')    
+        @include('partials.footer.footer')    
+    @endif
+    
+    @if (Request::route()->named('about'))
+        @include('partials.footer.about_footer')
     @endif
 </body>
 </html>

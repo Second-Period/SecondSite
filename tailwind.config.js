@@ -15,6 +15,15 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            boxShadow: {
+                primary: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                secundary: '0 -4px 8px rgba(0, 0, 0, 0.1)'
+            },
+            colors: {
+                primaryGreen: '#4CAF50',
+                secundaryGreen: '#e0f7e9',
+                terciary: '#333'
+            }
         },
     },
 

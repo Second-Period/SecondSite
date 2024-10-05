@@ -22,7 +22,7 @@
                     <a class="text-sm text-white hover:text-gray-400" href="https://www.instagram.com/fieldmultimarcas/?igshid=OGQ5ZDc2ODk2ZA%3D%3D">Instagram</a>
                 </li>
                 <li>
-                    <a class="text-sm text-white hover:text-gray-400" href="./pages/about.html">Sobre</a>
+                    <a class="text-sm text-white hover:text-gray-400" href="{{route('about')}}" :active="request()->routeIs('about')">Sobre</a>
                 </li>
                 <li>
                     <a class="text-sm text-white hover:text-gray-400" href="./pages/carrinho.html">
