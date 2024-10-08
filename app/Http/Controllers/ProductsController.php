@@ -19,7 +19,7 @@ class ProductsController extends Controller
         $validator = $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'price' => ['required', 'numeric'],
-            'product_img' => ['required', 'image', 'mimes:jpeg,png,jpg,gif,svg', 'max:2048'],
+            'product_img' => ['required', 'image', 'mimes:webp,jpeg,png,jpg,gif,svg', 'max:2048'],
         ]);
                     
         $file = rand(0,9999).'-'.$request->file('product_img')->getClientOriginalName();

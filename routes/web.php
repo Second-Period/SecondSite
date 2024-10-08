@@ -24,7 +24,7 @@ Route::middleware(['auth', 'verified',AdminMiddleware::class])->group(function (
         Route::post('/products/create',[ProductsController::class, 'create'])->name('products.create');
         Route::get('/products/{id}',[ProductsController::class, 'detail'])->name('products.detail');
         Route::put('/products/{id}',[ProductsController::class, 'update'])->name('products.update');
-        Route::delete('/products/{id}',[ProductsController::class, 'delete'])->name('products.delete');
+        Route::post('/products/{id}',[ProductsController::class, 'delete'])->name('products.delete');
     });
 });
 Route::middleware('auth')->group(function () {
