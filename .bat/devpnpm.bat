@@ -1,3 +1,4 @@
+REM SCRIPT QUE RODA O NODE EM FORMA DE DESENVOLVIMENTO
 @echo off
 call pnpm dev
 pause
