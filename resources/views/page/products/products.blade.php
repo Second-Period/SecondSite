@@ -14,7 +14,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $product->name }}</h5>
                             <p class="mb-0">{{ $product->price }}</p>
-                            <x-button class="bg-blue-500">Adicionar</x-button>
+                            <x-button class="bg-blue-500" id=".add-ao-carrinho">Adicionar</x-button>
                         </div>
                     </div>
                 @endforeach
