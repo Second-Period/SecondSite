@@ -1,7 +1,8 @@
 const mensagemCarrinhoVazio = document.querySelector(".mensagem-vazio");
 const divItensCarrinho = document.querySelector(".itens-carrinho");
 const mensagemCompra = document.querySelector("#mensagem-compra");
-
+const button = document.querySelector(".add-ao-carrinho");
+const compra = document.querySelector("#btn-comprar")
 function adicionarItemAoCarrinho(evento) {
     const btn = evento.currentTarget;
     const item = btn.getAttribute("data-item");
@@ -19,7 +20,7 @@ function gerarHtmlItem(nomeItem) {
     divItem.appendChild(descricaoItem);
 
     const btnRemover = document.createElement("button");
-    btnRemover.classList.add("btn", "btn-danger");
+    btnRemover.classList.add("bg-red-500","hover:bg-red-600", "text-white", "px-3", "py-1", "rounded-lg");
     btnRemover.textContent = 'X';
     divItem.appendChild(btnRemover);
 
@@ -31,17 +32,17 @@ function gerarHtmlItem(nomeItem) {
 function removerItemCarrinho(item) {
     item.remove();
     if (divItensCarrinho.querySelectorAll(".item").length === 0) {
-        mensagemCarrinhoVazio.classList.remove("d-none");
+        mensagemCarrinhoVazio.classList.remove("hidden");
     }
 }
 
-document.querySelectorAll(".add-ao-carrinho").forEach(button => {
+button.forEach(button => {
     button.addEventListener("click", adicionarItemAoCarrinho);
 });
 
-document.querySelector("#btn-comprar").addEventListener("click", () => {
+compra.addEventListener("click", () => {
     if (divItensCarrinho.querySelectorAll(".item").length > 0) {
-        mensagemCompra.classList.remove("d-none");
-        setTimeout(() => mensagemCompra.classList.add("d-none"), 3000);
+        mensagemCompra.classList.remove("hidden");
+        setTimeout(() => mensagemCompra.classList.add("hidden"), 3000);
     }
 });
