@@ -1,0 +1,5 @@
+@layer utilities {
+    .add-ao-carrinho {
+        @apply bg-blue-500
+    }
+}
