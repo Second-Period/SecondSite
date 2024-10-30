@@ -1,13 +1,15 @@
 const mensagemCarrinhoVazio = document.querySelector(".mensagem-vazio");
 const divItensCarrinho = document.querySelector(".itens-carrinho");
 const mensagemCompra = document.querySelector("#mensagem-compra");
-const button = document.querySelector(".add-ao-carrinho");
+const button = document.querySelectorAll(".add-ao-carrinho");
 const compra = document.querySelector("#btn-comprar")
+
+
 function adicionarItemAoCarrinho(evento) {
     const btn = evento.currentTarget;
     const item = btn.getAttribute("data-item");
     gerarHtmlItem(item);
-    mensagemCarrinhoVazio.classList.add("d-none");
+    mensagemCarrinhoVazio.classList.add("hidden");
 }
 
 function gerarHtmlItem(nomeItem) {
