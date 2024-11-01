@@ -25,7 +25,7 @@
                     <a class="text-sm text-white hover:text-gray-400" href="{{route('about')}}" :active="request()->routeIs('about')">Sobre</a>
                 </li>
                 <li>
-                    <a class="text-sm text-white hover:text-gray-400" href="./pages/carrinho.html">
+                    <a class="text-sm text-white hover:text-gray-400" href="carrinho.js">
                        Carrinho
                     </a>
                 </li>

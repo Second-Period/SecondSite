@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
@@ -11,8 +12,13 @@ Route::get('/laravel', function () {
 })->name('home');
 
 Route::get('/about', fn () => view('page.products.about'))->name('about');
+
 Route::get('/cadastro', fn () => view('page.auth.registerUser'))->name('cadastro');
+Route::post('/cadastro', [UserController::class, 'register'])->name('registerUser');
+
 Route::get('/log', fn () => view('page.auth.loginUser'))->name('loginUser');
+Route::post('/log', [AuthController::class, 'authentication'])->name('authUser');
+
 Route::get('/',[ProductsController::class, 'render_products'])->name('page_home');
 
 Route::middleware(['auth', 'verified',AdminMiddleware::class])->group(function () {
