@@ -5,7 +5,7 @@
         <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
             <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">cadastro</h2>
             
-            <form action="{{ route('cadastro') }}" method="post">
+            <form action="{{ route('registerUser') }}" method="post">
                 
                 <!-- Nome -->
                 <div class="mb-6">
