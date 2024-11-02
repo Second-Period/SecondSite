@@ -22,7 +22,7 @@ class UserController extends Controller
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', 'min:8'],
         ]);
-    
+        
         $user = User::create([
             'name' => $request->nome,
             'email' => $request->email,

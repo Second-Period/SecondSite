@@ -6,7 +6,7 @@
             <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">Login</h2>
 
             <form action="{{ route('authUser') }}" method="post">
-                
+                @csrf
                 <!-- Email Field -->
                 <div class="mb-6">
                     <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>

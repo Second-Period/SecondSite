@@ -5,8 +5,8 @@
         <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
             <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">Login</h2>
 
-            <form action="<?php echo e(route('loginUser')); ?>" method="post">
-                
+            <form action="<?php echo e(route('authUser')); ?>" method="post">
+                <?php echo csrf_field(); ?>
                 <!-- Email Field -->
                 <div class="mb-6">
                     <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>

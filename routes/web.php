@@ -14,7 +14,7 @@ Route::get('/laravel', function () {
 Route::get('/about', fn () => view('page.products.about'))->name('about');
 
 Route::get('/cadastro', fn () => view('page.auth.registerUser'))->name('cadastro');
-Route::post('/cadastro', [UserController::class, 'register'])->name('registerUser');
+Route::post('/cadastro', [UserController::class, 'createUser'])->name('registerUser');
 
 Route::get('/log', fn () => view('page.auth.loginUser'))->name('loginUser');
 Route::post('/log', [AuthController::class, 'authentication'])->name('authUser');

@@ -6,11 +6,11 @@
             <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">cadastro</h2>
             
             <form action="{{ route('registerUser') }}" method="post">
-                
+                @csrf
                 <!-- Nome -->
                 <div class="mb-6">
                     <label for="nome" class="block text-gray-700 font-bold mb-2">Nome:</label>
-                    <input type="nome" id="nome" name="nome" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring focus:border-blue-500" placeholder="Digite seu nome" required>
+                    <input type="text" id="nome" name="nome" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring focus:border-blue-500" placeholder="Digite seu nome" required>
                 </div>
                 <!-- Email -->
                 <div class="mb-6">
@@ -20,7 +20,7 @@
                 <!-- Senha -->
                 <div class="mb-6">
                     <label for="senha" class="block text-gray-700 font-bold mb-2">Senha:</label>
-                    <input type="senha" id="senha" name="senha" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring focus:border-blue-500" placeholder="Digite sua senha" required>
+                    <input type="password" id="password" name="password" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring focus:border-blue-500" placeholder="Digite sua senha" required>
                 </div>
 
                 <div class="mb-2">
