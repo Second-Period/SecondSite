@@ -7,7 +7,7 @@
             </svg>
         </button>
 
-        <div class="hidden md:flex md:items-center md:space-x-4" id="navbarSupportedContent">
+        <div class="hidden md:flex md:items-center md:space-x-4 justify-between" id="navbarSupportedContent">
             <ul class="flex space-x-4">
                 <li>
                     <a class="text-sm text-white hover:text-gray-400 whitespace-nowrap" href="#">Field Multimarcas</a>
@@ -30,12 +30,36 @@
                     </a>
                 </li>
             </ul>
-            <div class=' flex justify-end w-full md:w-1/2'>
-                <form class="ml-auto flex justify-end items-center gap-2">
-                    <input class="rounded-lg px-3 py-1 bg-gray-700 border-none text-white placeholder-gray-300 focus:ring focus:ring-indigo-500" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                    <x-button>Pesquisar</x-button>
-                </form>
-            </div>
+            @if (Auth::check()) 
+                <div class="dropdown">
+                    <button class="btn m-1 bg-gray-800 border-gray-800 text-white hover:text-gray-600" type="button">
+                        {{ Auth::user()->name }}
+                        <div class="ms-1">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </button>
+                    <ul class="menu dropdown-content rounded-box z-[1] w-52 p-2 shadow bg-gray-900">
+                        <x-dropdown-link class="text-white hover:rounded hover:bg-gray-600" :href="route('profile.edit')">
+                            {{ __('Profile') }}
+                        </x-dropdown-link>
+            
+                        <!-- Authentication -->
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+            
+                            <x-dropdown-link class="text-white hover:rounded hover:bg-gray-600" :href="route('logout')"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}
+                            </x-dropdown-link>
+                        </form>
+                    </ul>
+                </div>
+            @endif
         </div>
     </div>
 </nav>
+
+
