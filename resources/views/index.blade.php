@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    @vite(['resources/css/app.css', 'resources/js/navbar.js'])
+    @vite(['resources/css/app.css'])
     <title>Field</title>
 </head>
 <body class="bg-gray-200 font-sans">
-    @if (Request::route()->named('about'))
-    
-    @else
-        @include('partials.navbar')
-    @endif
 
     <main>
         @yield('content')
@@ -28,5 +23,7 @@
     @if (Request::route()->named('about'))
         @include('partials.footer.about_footer')
     @endif
+    
 </body>
+@vite(['resources/js/carrinho.js','resources/js/app.js'])
 </html>

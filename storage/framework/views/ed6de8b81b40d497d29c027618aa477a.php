@@ -25,9 +25,9 @@
                     <a class="text-sm text-white hover:text-gray-400" href="<?php echo e(route('about')); ?>" :active="request()->routeIs('about')">Sobre</a>
                 </li>
                 <li>
-                    <a class="text-sm text-white hover:text-gray-400" href="carrinho.js">
+                    <button @click="offcanvasOpen = true"  class="text-sm text-white hover:text-gray-400">
                        Carrinho
-                    </a>
+                    </button>
                 </li>
             </ul>
             <?php if(Auth::check()): ?> 

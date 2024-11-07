@@ -22,13 +22,14 @@ class ProductsController extends Controller
             'product_img' => ['required', 'image', 'mimes:webp,jpeg,png,jpg,gif,svg', 'max:2048'],
         ]);
                     
-        $file = rand(0,9999).'-'.$request->file('product_img')->getClientOriginalName();
-        $path = $request->file('product_img')->storeAs('upload', $file);
-            
+        $file = rand(0, 9999) . '-' . $request->file('product_img')->getClientOriginalName();
+        $public_file = public_path("/upload/$file");
+        copy($request->file("product_img")->getRealPath(),$public_file);
+
         $product = Products::create([
             'name' => $request->name,
             'price' => $request->price,
-            'product_img' => $path
+            'product_img' => "upload/$file"
         ]);
             
         return redirect()->route('products.index')->with('success', 'Produto salvo com sucesso!'); 
