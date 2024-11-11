@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div x-data="{ offcanvasOpen: false }" class="relative">
+    <div x-data="{ offcanvasOpen: false, itens: [] }" class="relative">
 
         @include('partials.navbar')
         
@@ -62,7 +62,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $product->name }}</h5>
                             <p class="mb-0">{{ $product->price }}</p>
-                            <x-button class="add-ao-carrinho" data-name="{{ $product->name }}">Adicionar</x-button>
+                            <button @click ="itens.push('{{ $product->name }}')" class="add-ao-carrinho hover:bg-blue-600 text-white px-3 py-1 rounded-lg" data-name="{{ $product->name }}">Adicionar</button>
                         </div>
                     </div>
                 @endforeach

@@ -2,7 +2,7 @@
 
 <?php $__env->startSection('content'); ?>
 
-    <div x-data="{ offcanvasOpen: false }" class="relative">
+    <div x-data="{ offcanvasOpen: false, itens: [] }" class="relative">
 
         <?php echo $__env->make('partials.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         
@@ -62,25 +62,7 @@
                         <div class="card-body">
                             <h5 class="card-title"><?php echo e($product->name); ?></h5>
                             <p class="mb-0"><?php echo e($product->price); ?></p>
-                            <?php if (isset($component)) { $__componentOriginald0f1fd2689e4bb7060122a5b91fe8561 = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginald0f1fd2689e4bb7060122a5b91fe8561 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button','data' => ['class' => 'add-ao-carrinho','dataName' => ''.e($product->name).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('button'); ?>
-<?php if ($component->shouldRender()): ?>
-<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
-<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
-<?php endif; ?>
-<?php $component->withAttributes(['class' => 'add-ao-carrinho','data-name' => ''.e($product->name).'']); ?>Adicionar <?php echo $__env->renderComponent(); ?>
-<?php endif; ?>
-<?php if (isset($__attributesOriginald0f1fd2689e4bb7060122a5b91fe8561)): ?>
-<?php $attributes = $__attributesOriginald0f1fd2689e4bb7060122a5b91fe8561; ?>
-<?php unset($__attributesOriginald0f1fd2689e4bb7060122a5b91fe8561); ?>
-<?php endif; ?>
-<?php if (isset($__componentOriginald0f1fd2689e4bb7060122a5b91fe8561)): ?>
-<?php $component = $__componentOriginald0f1fd2689e4bb7060122a5b91fe8561; ?>
-<?php unset($__componentOriginald0f1fd2689e4bb7060122a5b91fe8561); ?>
-<?php endif; ?>
+                            <button @click ="itens.push('<?php echo e($product->name); ?>')" class="add-ao-carrinho hover:bg-blue-600 text-white px-3 py-1 rounded-lg" data-name="<?php echo e($product->name); ?>">Adicionar</button>
                         </div>
                     </div>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
