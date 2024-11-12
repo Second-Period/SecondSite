@@ -46,8 +46,8 @@
         <div class="flex flex-wrap gap-4">
           <img class="w-12 h-auto" src="https://www.mobills.com.br/blog/wp-content/uploads/2022/06/logo-da-bandeira-mastercard.png" alt="MasterCard" />
           <img class="w-12 h-auto" src="https://e3ba6e8732e83984.cdn.gocache.net/uploads/image/file/686355/regular_f4df08f505a58b45a13913522c79add5.png" alt="Visa" />
-          <img class="w-12 h-auto" src="https://play-lh.googleusercontent.com/I9ZxHTg3hvf8LvIZqkf7jqjMcl7cmAwhZLVcuX5Kzl2k8U3fEoj60bzCfML52jFmSg" alt="Google Pay" />
-          <img class="w-12 h-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSECDKIpkdSUbFaBLjhaAxj0qMcSdLRFvvtvQ&usqp=CAU" alt="Apple Pay" />
+          <img class="w-12 h-auto" src="https://play-lh.googleusercontent.com/I9ZxHTg3hvf8LvIZqkf7jqjMcl7cmAwhZLVcuX5Kzl2k8U3fEoj60bzCfML52jFmSg" alt="Cartão AME" />
+          <img class="w-12 h-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSECDKIpkdSUbFaBLjhaAxj0qMcSdLRFvvtvQ&usqp=CAU" alt="Diners Club" />
         </div>
       </div>
     </div>
