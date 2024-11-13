@@ -1,65 +1,92 @@
-const mensagemCarrinhoVazio = $(".mensagem-vazio");
-const divItensCarrinho = $(".itens-carrinho");
+document.addEventListener('DOMContentLoaded', (event) => {
+    const divItensCarrinho = document.querySelector(".itens-carrinho");
 
-console.log(mensagemCarrinhoVazio)
-function adicionarItemAoCarrinho(evento) {
-    const btn = $(evento.currentTarget);
-    const item = btn.prev().text();
+    // Criar e adicionar a mensagem de carrinho vazio acima dos itens
+    const mensagemCarrinhoVazio = document.createElement("p");
+    mensagemCarrinhoVazio.textContent = "Nenhum item no carrinho";
+    mensagemCarrinhoVazio.className = "mensagem-vazio font-bold text-center mb-4"; // Classe para estilo em negrito
+    mensagemCarrinhoVazio.style.fontWeight = "bold"; // Adiciona negrito
+    mensagemCarrinhoVazio.style.display = "none"; // Inicialmente oculta
 
-    gerarHtmlItem(item);
+    // Adiciona a mensagem acima dos itens do carrinho
+    divItensCarrinho.parentNode.insertBefore(mensagemCarrinhoVazio, divItensCarrinho);
 
-    mensagemCarrinhoVazio.addClass("d-none");
-}
-
-function gerarHtmlItem(nomeItem) {
-    const itens = $(".itens-carrinho");
-    const divItem = $("<div></div>", {
-        class: "rounded border w-100 flex gap-2 items-center justify-between mb-2 item"
-    }).appendTo(itens);
-
-    const divImagem = $("<div></div>", {
-        class: "imagem"
-    }).appendTo(divItem);
-
-    $("<img>", {
-        src: "https://cdn.discordapp.com/attachments/694536530114510868/1174373033855696946/image-2_1.png?ex=65675b1e&is=6554e61e&hm=7482c1a18fe8beb6885fae47b63290e49650fc889075ff0bcdbef555483babfe&",
-        class: "card-img-top",
-        alt: "..."
-    }).appendTo(divImagem);
-
-    $("<div></div>", {
-        class: "descricao-item",
-        text: nomeItem
-    }).appendTo(divItem);
-
-    const divAcoes = $("<div></div>", {
-        class: "acoes-item p-3 border-start",
-    }).appendTo(divItem);
-
-    const btnRemover = $("<button></button>", {
-        class: "btn btn-sm btn-danger carrinho-remover-item",
-        html: 'X'
-    }).appendTo(divAcoes);
-
-    btnRemover.on("click", removerItemCarrinho);
-}
-
-function removerItemCarrinho(evento) {
-    const btn = $(evento.currentTarget);
-
-    btn.closest('.item').remove();
-
-    if (divItensCarrinho.find(".item").length === 0) {
-        mensagemCarrinhoVazio.removeClass("d-none");
+    function atualizarMensagemCarrinho() {
+        // Exibe a mensagem quando não há itens no carrinho, esconde quando há itens
+        if (divItensCarrinho.querySelectorAll(".item").length === 0) {
+            mensagemCarrinhoVazio.style.display = "block";
+        } else {
+            mensagemCarrinhoVazio.style.display = "none";
+        }
     }
-}
 
-$(".add-ao-carrinho").on("click", adicionarItemAoCarrinho);
-$("#btn-comprar").on("click", ()=>alert("Obrigado pela sua compra!"));
+    function adicionarItemAoCarrinho(evento) {
+        const btn = evento.currentTarget;
+        const item = btn.previousElementSibling.textContent;
 
+        gerarHtmlItem(item);
+        atualizarMensagemCarrinho();
+    }
 
+    function gerarHtmlItem(nomeItem) {
+        const divItem = document.createElement("div");
+        divItem.className = "rounded border w-100 flex gap-2 items-center justify-between mb-2 item";
 
+        const divImagem = document.createElement("div");
+        divImagem.className = "imagem";
+        divItem.appendChild(divImagem);
 
+        const img = document.createElement("img");
+        img.src = "https://cdn.discordapp.com/attachments/694536530114510868/1174373033855696946/image-2_1.png?ex=6733769e&is=6732251e&hm=3cda1e575494f77c7f9e000e6767207b5ec4786761b23413f921fe6787e422a3&";
+        img.className = "card-img-top";
+        img.alt = "...";
+        divImagem.appendChild(img);
+
+        const descricaoItem = document.createElement("div");
+        descricaoItem.className = "descricao-item";
+        descricaoItem.textContent = nomeItem;
+        divItem.appendChild(descricaoItem);
+
+        const divAcoes = document.createElement("div");
+        divAcoes.className = "acoes-item p-3 border-start";
+        divItem.appendChild(divAcoes);
+
+        const btnRemover = document.createElement("button");
+        btnRemover.className = "btn btn-sm btn-danger carrinho-remover-item";
+        btnRemover.textContent = "X";
+        btnRemover.addEventListener("click", removerItemCarrinho);
+        divAcoes.appendChild(btnRemover);
+
+        // Adiciona o novo item no topo
+        divItensCarrinho.prepend(divItem);
+    }
+
+    function removerItemCarrinho(evento) {
+        const btn = evento.currentTarget;
+        const item = btn.closest('.item');
+
+        if (item) {
+            item.remove();
+        }
+
+        atualizarMensagemCarrinho();
+    }
+
+    document.querySelectorAll(".add-ao-carrinho").forEach(btn => {
+        btn.addEventListener("click", adicionarItemAoCarrinho);
+    });
+
+    document.getElementById("btn-comprar").addEventListener("click", () => {
+        // Verifica se há itens no carrinho antes de mostrar a mensagem de compra
+        if (divItensCarrinho.querySelectorAll(".item").length > 0) {
+            alert("Obrigado pela sua compra!");
+        } else {
+            alert("Coloque um produto no carrinho");
+        }
+    });
+
+    atualizarMensagemCarrinho(); // Checa se o carrinho está vazio ao carregar a página
+});
 
 
 //const mensagemCarrinhoVazio = document.querySelector(".mensagem-vazio");

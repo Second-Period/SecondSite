@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div x-data="{ offcanvasOpen: false }" class="relative">
+    <div x-data="{ offcanvasOpen: false, itens: [] }" class="relative">
 
         @include('partials.navbar')
         
@@ -39,13 +39,16 @@
                 <div class="itens-carrinho">
                     <!-- Mensagem de carrinho vazio -->
                     <div class="mensagem-vazio flex flex-col items-center justify-center h-96 border-b border-gray-300">
-                        <p class="text-gray-500 text-lg font-semibold">NENHUM ITEM NO CARRINHO</p>
+                        <p class="text-gray-500 text-lg font-semibold"></p>
                     </div>
                     <!-- Itens do carrinho vão aqui -->
                 </div>
-                <button id="btn-comprar" class="bg-green-500 text-white w-full py-2 mt-4 rounded-md hover:bg-green-600">
-                    Comprar
-                </button>
+                <div class="flex item-center">
+                    <button  id="btn-comprar" class="bg-green-500 text-white w-full py-2 mt-4 rounded-md hover:bg-green-600 pr-4">
+                        Comprar
+                    </button>
+                </div>
+               
             </div>
         </div>
     </div>
@@ -55,14 +58,14 @@
        <div class="p-4 border rounded mx-3">
             <div class="text-lg border-b-2 border-slate-300 mb-2 pb-2 text-center"> Produtos</div>
 
-            <div class="grid grid-cols-5 gap-5">
+            <div class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
                 @foreach ($products as $product)
                     <div class="mt-2 card w-18 rounded-lg border border-gray-600">
                         <img src="{{ asset($product->product_img) }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ $product->name }}</h5>
                             <p class="mb-0">{{ $product->price }}</p>
-                            <x-button class="add-ao-carrinho" data-name="{{ $product->name }}">Adicionar</x-button>
+                            <button @click ="itens.push('{{ $product->name }}')" class="add-ao-carrinho hover:bg-blue-600 text-white px-3 py-1 rounded-lg" data-name="{{ $product->name }}">Adicionar</button>
                         </div>
                     </div>
                 @endforeach

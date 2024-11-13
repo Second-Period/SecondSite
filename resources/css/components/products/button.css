@@ -1,5 +1,30 @@
 @layer utilities {
     .add-ao-carrinho {
-        @apply bg-blue-500
+        @apply bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-semibold py-2 px-6 rounded-full transition-all duration-300 ease-in-out 
+               transform hover:scale-105 hover:from-indigo-500 hover:to-blue-500 shadow-lg hover:shadow-xl 
+               sm:px-4 sm:py-2 lg:px-8 lg:py-4 lg:text-lg w-full sm:w-auto;
+        
+        /* Efeito inicial */
+        transform: scale(1);
+    }
+
+    /* Efeito de sombra interna ao pressionar */
+    .add-ao-carrinho:active {
+        @apply shadow-inner;
+        transform: scale(0.98);
+    }
+
+    /* Borda animada ao passar o mouse */
+    .add-ao-carrinho::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        border: 2px solid transparent;
+        transition: border-color 0.3s ease;
+    }
+
+    .add-ao-carrinho:hover::after {
+        border-color: rgba(255, 255, 255, 0.5);
     }
 }
