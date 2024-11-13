@@ -8,23 +8,23 @@
         </header>
         <section class="flex justify-center gap-5 my-5">
             <div class="rounded-lg flex flex-col items-center bg-white p-2.5 ">
-                <img class="rounded-xl w-[90px] h-[170px] object-cover mb-2.5" src="https://cdn.discordapp.com/attachments/1273399725479039101/1305703865710153738/357b3285-ffb0-4fb1-be28-58d30715c2b5.png?ex=6733fefc&is=6732ad7c&hm=e9d4523702f9a8fc9067778433464e9f248367c98beb460fc35641149dc984c4&" alt="">
+                <img class="rounded-xl w-[90px] h-[170px] object-cover mb-2.5" src="https://media.discordapp.net/attachments/1273399725479039101/1305703865710153738/357b3285-ffb0-4fb1-be28-58d30715c2b5.png?ex=6735507c&is=6733fefc&hm=eff66edb3bea271222ce111ee2b000f8622e6b512e911ae34591968ad2f69437&=&format=webp&quality=lossless&width=298&height=614" alt="">
                 <p>Emerson Nascimento</p>
             </div>
             <div class="rounded-lg flex flex-col items-center bg-white p-2.5 ">
-                <img class="rounded-xl w-[90px] h-[170px] object-cover mb-2.5" src="https://cdn.discordapp.com/attachments/1273399725479039101/1305704001647677480/fc86b073-8280-47c6-bafb-e237aab2c093.png?ex=6733ff1c&is=6732ad9c&hm=147bf9eb46d9c7ce2bbd01e0dee02b942b6b82c561c807e5b922b814acc4875f&" alt="">
+                <img class="rounded-xl w-[90px] h-[170px] object-cover mb-2.5" src="https://media.discordapp.net/attachments/1273399725479039101/1305704001647677480/fc86b073-8280-47c6-bafb-e237aab2c093.png?ex=6735509c&is=6733ff1c&hm=847c783c33c690578ef38ee823454090717009898e1077e262693d4675aa1f81&=&format=webp&quality=lossless&width=460&height=614" alt="">
                 <p>Gabriel Souza</p>
             </div>
             <div class="rounded-lg flex flex-col items-center bg-white p-2.5 ">
-                <img class="rounded-xl w-[90px] h-[170px] object-cover mb-2.5" src="https://cdn.discordapp.com/attachments/1273399725479039101/1305706247953190953/image.png?ex=67340134&is=6732afb4&hm=b010cec32a59b7de273df6b6dda0ef421f6cab81eae506b96015701ce43abf00&" alt="">
+                <img class="rounded-xl w-[90px] h-[170px] object-cover mb-2.5" src="https://media.discordapp.net/attachments/1273399725479039101/1305706247953190953/image.png?ex=673552b4&is=67340134&hm=af20206326f4e7bc62b44cbc3194d3cc7aa99af4a595f943fcce5c61c94d5c72&=&format=webp&quality=lossless&width=404&height=613" alt="">
                 <p>Lucas Almeida</p>
             </div>
             <div class="rounded-lg flex flex-col items-center bg-white p-2.5 ">
-                <img class="rounded-xl w-[90px] h-[170px] object-cover mb-2.5" src="https://cdn.discordapp.com/attachments/1273399725479039101/1305701895351963669/IMG-20240828-WA0058.jpg?ex=6733fd26&is=6732aba6&hm=703b083e38b215479100cd9d2d27ecc456fa7e73e3d6f85efa61c6ef64d838ff&" alt="">
+                <img class="rounded-xl w-[90px] h-[170px] object-cover mb-2.5" src="https://media.discordapp.net/attachments/1273399725479039101/1305701895351963669/IMG-20240828-WA0058.jpg?ex=67354ea6&is=6733fd26&hm=3f24687d99b42f0fe0f616bc4249ee1585c50ad7aa3842ad76c385860540bf00&=&format=webp&width=460&height=613" alt="">
                 <p>Lucas Thomaz</p>
             </div>
             <div class="rounded-lg flex flex-col items-center bg-white p-2.5 ">
-                <img class="rounded-xl w-[90px] h-[170px] object-cover mb-2.5" src="https://cdn.discordapp.com/attachments/1273399725479039101/1305699849345171486/816fa60d-9637-44b7-8e5e-a6fa9a34e129.png?ex=6733fb3e&is=6732a9be&hm=1b312bf85e1000f455f9f10df0048e15977281f614a354a8f3b6ff37fcd8531b&" alt="">
+                <img class="rounded-xl w-[90px] h-[170px] object-cover mb-2.5" src="https://media.discordapp.net/attachments/1273399725479039101/1305699849345171486/816fa60d-9637-44b7-8e5e-a6fa9a34e129.png?ex=67354cbe&is=6733fb3e&hm=8135b48d4881cdda62fa077692a6dfcb94271b48b39c306ddb59e87315e5a4a6&=&format=webp&quality=lossless" alt="">
                 <p>Luís Henrique</p>
             </div>
         </section>

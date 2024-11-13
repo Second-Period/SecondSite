@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         divItem.appendChild(divImagem);
 
         const img = document.createElement("img");
-        img.src = "https://cdn.discordapp.com/attachments/694536530114510868/1174373033855696946/image-2_1.png?ex=6733769e&is=6732251e&hm=3cda1e575494f77c7f9e000e6767207b5ec4786761b23413f921fe6787e422a3&";
+        img.src = "https://media.discordapp.net/attachments/694536530114510868/1174373033855696946/image-2_1.png?ex=673570de&is=67341f5e&hm=4300b753982c50c9096f8273bec9682f78117ab2284538922ba0c46f900fb58a&=&format=webp&quality=lossless";
         img.className = "card-img-top";
         img.alt = "...";
         divImagem.appendChild(img);
